@@ -1,0 +1,23 @@
+﻿<Page x:Class="UserInt.ProductPAge"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UserInt"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="300"
+      Title="ProductPAge">
+
+    <Grid Margin="0,0,-107,0">
+        <ListView x:Name="ProductListView" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="407">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Артикул" DisplayMemberBinding="{Binding Path=Id}" Width="100" />
+                    <GridViewColumn Header="Название" DisplayMemberBinding="{Binding Path=Name}" Width="100"/>
+                    <GridViewColumn Header="Цена покупки" DisplayMemberBinding="{Binding Path=BuyPrice}" Width="100"/>
+                    <GridViewColumn Header="Цена продажи" DisplayMemberBinding="{Binding Path=Sellprice}" Width="100" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

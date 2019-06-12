@@ -1,0 +1,16 @@
+﻿<Page x:Class="UserInt.DeliteVmPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UserInt"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="DeliteVmPage">
+
+    <Grid>
+        <Label x:Name="DeliteVmtLabel" Content="Id автомата" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,8,0,0" />
+        <TextBox x:Name="DeliteVmBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="107" Margin="11,39,0,0" />
+        <Button x:Name="DeliteVmButton" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="2.686,6.514" Margin="169,121,0,0" Click="DeliteVmButton_Click"/>
+    </Grid>
+</Page>
